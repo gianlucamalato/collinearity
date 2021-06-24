@@ -1,10 +1,18 @@
 from distutils.core import setup
+
+with open('README.md') as f:
+    long_description = f.read()
+
+
 setup(
   name = 'collinearity',         # How you named your package folder (MyLib)
   packages = ['collinearity'],   # Chose the same as "name"
   version = '0.5',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'A Python library for removing collinearity in machine learning datasets',   # Give a short description about your library
+  long_description=long_description,
+  long_description_content_type='text/markdown',  # This is important!
+  
   author = 'Gianluca Malato',                   # Type in your name
   author_email = 'gianluca.malato@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/gianlucamalato/collinearity',   # Provide either the link to your github or to your website
