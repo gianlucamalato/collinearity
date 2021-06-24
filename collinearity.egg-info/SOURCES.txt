@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+collinearity/SelectNonCollinear.py
+collinearity/__init__.py
+collinearity.egg-info/PKG-INFO
+collinearity.egg-info/SOURCES.txt
+collinearity.egg-info/dependency_links.txt
+collinearity.egg-info/requires.txt
+collinearity.egg-info/top_level.txt
