@@ -41,7 +41,7 @@ def remove_collinearity_unsupervised(X,corr_threshold=0.4):
 
 
 def remove_collinearity_supervised(X,y,scoring=f_classif,corr_threshold=0.4):
-  s = SelectKBest(scoring,"all")
+  s = SelectKBest(scoring,k="all")
   s.fit(X,y)
   scores = [(i,s.scores_[i]) for i in range(len(s.scores_))]
   scores.sort(key = lambda x : -x[1])
